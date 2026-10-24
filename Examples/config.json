@@ -1,0 +1,20 @@
+{
+  "name": "Folio",
+  "version": "1.0.0",
+  "private": true,
+  "features": [
+    "markdown",
+    "json",
+    "sql",
+    "code"
+  ],
+  "editor": {
+    "theme": "system",
+    "fontSize": 13.5,
+    "lineNumbers": true,
+    "currentLine": true
+  },
+  "accent": "#b85533",
+  "empty": null,
+  "enabled": true
+}
