@@ -105,9 +105,11 @@ Folio 是一款轻量的原生 macOS 编辑器，专注于你真正会打开的�
 
 适用于 Apple Silicon 与 Intel 的预构建**通用版**：**[最新版本](https://github.com/BugCooker-cooking/folio/releases/latest)**。
 
-1. 下载 `Folio-1.0.0-macOS-universal.zip`。
-2. 解压后把 `Folio.app` 移动到「应用程序」。
-3. 构建已使用 Developer ID 签名，并通过 Apple 公证，解压后通常可以直接打开。
+1. 下载 `Folio-1.0.0-macOS-universal.dmg`（推荐）。
+2. 打开磁盘映像，将 `Folio.app` 拖入「应用程序」。
+3. DMG 与 App 均已使用 Developer ID 签名并通过 Apple 公证，可直接通过 Gatekeeper。
+
+自动化或 CI 场景可以使用 `Folio-1.0.0-macOS-universal.zip`，内容相同的已签名 App。
 
 ## 构建与运行
 

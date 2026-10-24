@@ -105,9 +105,11 @@ The `Examples/` folder contains a few files to try the app with.
 
 Prebuilt **universal** app for Apple Silicon and Intel: **[latest release](https://github.com/BugCooker-cooking/folio/releases/latest)**.
 
-1. Download `Folio-1.0.0-macOS-universal.zip`.
-2. Unzip it and move `Folio.app` to **Applications**.
-3. The build is signed with a Developer ID certificate and notarized by Apple. It should open directly after unzipping.
+1. Download `Folio-1.0.0-macOS-universal.dmg` (recommended).
+2. Open the disk image and drag `Folio.app` to **Applications**.
+3. The DMG and app are signed with a Developer ID certificate and notarized by Apple. They open directly under Gatekeeper.
+
+For automation or CI, `Folio-1.0.0-macOS-universal.zip` contains the same signed app.
 
 ## Build and run
 

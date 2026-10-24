@@ -43,15 +43,29 @@ The script:
 - verifies the app with `codesign`, `stapler`, and `spctl`;
 - creates `dist/Folio-VERSION-macOS-universal.zip` and prints its SHA-256.
 
-## 3. Publish
+## 3. Build the disk image
+
+The signed and stapled app can also be distributed as a DMG:
+
+```sh
+export DEVELOPER_ID_IDENTITY="Developer ID Application: Your Name (TEAMID)"
+./Scripts/package_dmg.sh
+```
+
+This creates `dist/Folio-VERSION-macOS-universal.dmg`, signs it, submits it to
+the notary service, staples the ticket, verifies it with `spctl`, and prints its
+SHA-256.
+
+## 4. Publish
 
 Create a new tag and GitHub release, then attach:
 
-- `Folio-VERSION-macOS-universal.zip`
+- `Folio-VERSION-macOS-universal.dmg` (recommended)
+- `Folio-VERSION-macOS-universal.zip` (automation/CI)
 - the screenshots from `docs/screenshots/`
 
-Update the download filename, SHA-256, and release notes. Do not reuse a
-previous release tag for a differently signed build; publish a new patch
+Update the download filenames, SHA-256 values, and release notes. Do not reuse
+a previous release tag for a differently signed build; publish a new patch
 version instead.
 
 ## Notes
