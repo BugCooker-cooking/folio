@@ -107,7 +107,7 @@ Folio 是一款轻量的原生 macOS 编辑器，专注于你真正会打开的�
 
 1. 下载 `Folio-1.0.0-macOS-universal.zip`。
 2. 解压后把 `Folio.app` 移动到「应用程序」。
-3. 构建使用 ad-hoc 签名，尚未公证。若首次打开被系统拦截，请按住 Control 点击应用并选择「打开」。
+3. 构建已使用 Developer ID 签名，并通过 Apple 公证，解压后通常可以直接打开。
 
 ## 构建与运行
 

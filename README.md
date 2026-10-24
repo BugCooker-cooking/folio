@@ -107,7 +107,7 @@ Prebuilt **universal** app for Apple Silicon and Intel: **[latest release](https
 
 1. Download `Folio-1.0.0-macOS-universal.zip`.
 2. Unzip it and move `Folio.app` to **Applications**.
-3. The build is ad-hoc signed and not notarized. If macOS blocks the first launch, Control-click the app and choose **Open**.
+3. The build is signed with a Developer ID certificate and notarized by Apple. It should open directly after unzipping.
 
 ## Build and run
 

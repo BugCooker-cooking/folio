@@ -12,6 +12,6 @@ The first public release of Folio.
 - Encoding, BOM, and line-ending preservation
 - Seven interface languages following the system language
 - Light, dark, and system appearance; localized hover tips
-- Universal macOS build for Apple Silicon and Intel
+- Developer ID signed and notarized universal macOS build for Apple Silicon and Intel
 
 See the detailed [1.0.0 release notes](docs/releases/1.0.0.md).
